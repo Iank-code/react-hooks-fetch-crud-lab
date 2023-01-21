@@ -4,7 +4,7 @@ function QuestionItem(question) {
   const { id, prompt, answers, correctIndex, handleDelete, onAnswerChange } =
     question;
   const singleAnswer = answers.map((item, index) => {
-    return <option key={index}>{item}</option>;
+    return <option value={index} key={index}>{item}</option>;
   });
   
   function handleAnswerChange(event) {

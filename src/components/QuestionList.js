@@ -21,6 +21,7 @@ function QuestionList() {
   }
 
   function handleAnswerChange(id, correctIndex) {
+    console.log(correctIndex)
     fetch(`http://localhost:4000/questions/${id}`, {
       method: "PATCH",
       headers: {
